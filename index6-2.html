@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html lang="id">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lkpd 5</title>
+</head>
+<body>
+  
+  <div id="kotak"></div>
+  <button onclick="tambahElemen()">Tambah Elemen</button>
+
+<script>
+  function tambahElemen() {
+    let elemenBaru = document.createElement("p"); 
+    elemenBaru.innerHTML = "Ini elemen baru!";
+    document.getElementById("kotak").appendChild(elemenBaru);
+  }
+  /* 1. Fungsinya adalah mengambil elemen HTML berdasarkan atribut id.
+        Dengan cara ini, JavaScript bisa:
+        mengubah teks,
+        mengubah warna,
+        menambah atau menghapus elemen,
+        mengubah gaya CSS, dan lainnya.
+    2.Untuk menambah elemen baru, langkahnya:
+      1.Buat elemen baru dengan document.createElement()
+      2.(Opsional) Tambahkan teks menggunakan textContent atau innerHTML
+      3.Tempelkan elemen baru ke halaman menggunakan appendChild() atau append()
+  */
+</script>
+  
+</body>
+</html>

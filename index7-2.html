@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" oninput="tampil(this.value)" placeholder="Ketik sesuatu...">
+<p>Hasil: <span id="hasil"></span></p>
+
+<script>
+function tampil(teks) {
+  document.getElementById("hasil").innerHTML = teks;
+}
+  /* 1. onclick butuh aksi klik lengkap, sedangkan
+        onmouseover terjadi hanya karena kursor menyentuh elemen.
+     2. Karena event memungkinkan halaman web merespon tindakan pengguna, seperti:
+       klik tombol
+       mengetik
+       menggerakkan mouse
+       memilih opsi
+       mengubah ukuran jendela
+Tanpa event, halaman web hanya menjadi statis dan tidak dapat berinteraksi dengan pengguna.
+Event membuat website menjadi dinamis, responsif, dan menarik.
+  */
+</script>
+
+</body>
+</html>
